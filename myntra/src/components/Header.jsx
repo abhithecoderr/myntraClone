@@ -28,7 +28,7 @@ const Header = () => {
           </a>
         </nav>
         <div className="search_bar">
-          <IoIosSearch className="search_icon"/>
+          <IoIosSearch className="search_icon" />
           <input
             className="search_input"
             placeholder="Search for products, brands and more"

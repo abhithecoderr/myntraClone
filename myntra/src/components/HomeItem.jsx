@@ -1,21 +1,4 @@
-const HomeItem = () => {
-
-  const item = {
-    id: "001",
-    image: "images/1.jpg",
-    company: "Carlton London",
-    item_name: "Rhodium-Plated CZ Floral Studs",
-    original_price: 1045,
-    current_price: 606,
-    discount_percentage: 42,
-    return_period: 14,
-    delivery_date: "10 Oct 2023",
-    rating: {
-      stars: 4.5,
-      count: 1400,
-    },
-  };
-
+const HomeItem = ({ item }) => {
   return (
     <div className="item-container">
       <img className="item-image" src={item.image} alt="item image" />
@@ -29,9 +12,7 @@ const HomeItem = () => {
         <span className="original-price">Rs {item.original_price}</span>
         <span className="discount">({item.discount_percentage}% OFF)</span>
       </div>
-      <button className="btn-add-bag" onclick="addToBag(${item.id})">
-        Add to Bag
-      </button>
+      <button className="btn-add-bag">Add to Bag</button>
     </div>
   );
 };
