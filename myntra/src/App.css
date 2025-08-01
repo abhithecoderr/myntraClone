@@ -233,8 +233,9 @@ header {
 }
 
 .btn-remove-bag {
-  margin-top: 10px;
-  width: 100%;
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 80%;
   padding: 10px 16px;
   font-size: 15px;
   font-weight: 600;
