@@ -243,10 +243,6 @@ a.action_container:link {
   color: black;
 }
 
-
-
-
-
 .bag-items-container {
   display: inline-block;
   width: 64%;
@@ -365,7 +361,7 @@ a.action_container:link {
   margin-top: 5px;
   color: #282c3f;
   font-size: 12px;
-  letter-spacing: -.1px;
+  letter-spacing: -0.1px;
   margin-bottom: 8px;
   line-height: 15px;
 }
