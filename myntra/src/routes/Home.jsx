@@ -3,7 +3,9 @@ import HomeItem from "../components/HomeItem";
 import { useNavigation } from "react-router-dom";
 
 const Home = () => {
+  const bagItems = useSelector(store=> store.bag)
   const items = useSelector((store) => store.items);
+  console.log(bagItems);
   
   return (
     <>

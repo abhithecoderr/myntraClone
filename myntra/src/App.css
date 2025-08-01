@@ -211,15 +211,48 @@ header {
   margin-left: 5px;
 }
 .btn-add-bag {
-  margin-top: 8px;
-  font-size: 18px;
-  width: 100%;
-  background-color: lightgreen;
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 80%;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #23c16b; /* deeper green */
+  color: white;
   border: none;
-  padding: 5px 15px;
-  border-radius: 10px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
+
+.btn-add-bag:hover {
+  background-color: #1aa157;
+  transform: scale(1.02);
+}
+
+.btn-remove-bag {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #d93025; /* rich red tone */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-remove-bag:hover {
+  background-color: #b92c23;
+  transform: scale(1.02);
+}
+
 .bag-item-count {
   background-color: #f16565;
   white-space: nowrap;

@@ -3,8 +3,11 @@ import { IoPerson } from "react-icons/io5";
 import { IoMdHeart } from "react-icons/io";
 import { IoBag } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+
+  const bagIds = useSelector(store=> store.bag);
   return (
     <>
       <header>
@@ -48,7 +51,7 @@ const Header = () => {
           <Link to="/bag" className="action_container" href="">
             <IoBag size={20} />
             <span className="action_name">Bag</span>
-            <span className="bag-item-count">0</span>
+            <span className="bag-item-count">{bagIds.length}</span>
           </Link>
         </div>
       </header>
